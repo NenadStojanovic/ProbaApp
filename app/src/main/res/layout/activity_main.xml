@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  tools:context=".MainActivity"
+    android:background="@drawable/pozadina2">
+
+    <!--
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_marginBottom="106dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:id="@+id/button"
+            android:layout_weight="0.47"
+            android:layout_marginRight="0dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/primary_material_light" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Trening"
+            android:id="@+id/button2"
+            android:layout_weight="0.47"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/primary_material_light" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/linearLayout"
+        android:cropToPadding="false"
+        android:src="@drawable/manja_slika"
+        android:layout_marginBottom="70dp" />-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_gravity="bottom"
+            android:background="@drawable/new_button"
+            android:onClick="sendMessage"
+            android:layout_weight="0" />
+
+        <ImageButton
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="bottom"
+            android:background="@drawable/new_button"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_marginTop="141dp"
+        android:fontFamily="Veteran Typewriter Regular"
+        android:textColor="#ffffffff"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:typeface="sans" />
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/new_button2"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+             />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:text="TRENING"
+            android:textSize="25dp"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+
+</RelativeLayout>
